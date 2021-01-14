@@ -1,0 +1,7 @@
+version: "3.6"
+services:
+  second:
+    container_name: second
+    image: busybox
+    command: ping -c 5 first
+    hostname: extra
